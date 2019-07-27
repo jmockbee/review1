@@ -15,13 +15,16 @@ public class Main {
 //        }
         int switchValue = 4;
 
-        switch (switchValue){
+        switch (switchValue) {
             case 1:
                 System.out.println("Value was ");
                 break;
 
-            case 3: case 4: case 5:
+            case 3:
+            case 4:
+            case 5:
                 System.out.println("was a 3 ,4 or 5");
+                System.out.println("was a " + switchValue);
                 break;
             default:
                 System.out.println("was not one or two");
@@ -29,7 +32,22 @@ public class Main {
         }
         /// more code here after break;
 
+        char charValue = 'b';
+        switch (charValue) {
+            case 'a':
+                System.out.println("Value was a ");
+                break;
+            case 'b': case 'c':
+            case 'd': case 'e':
+                System.out.println("was a b,c,d,e");
+                System.out.println("was a " + charValue);
+                break;
+
+            default:
+                System.out.println("was not found");
+                break;
+        }
+
     }
 
 }
-
